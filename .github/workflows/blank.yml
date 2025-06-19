@@ -29,4 +29,4 @@ jobs:
         run: echo "${{ secrets.QUAY_TOKEN }}" | docker login quay.io -u "${{ secrets.QUAY_USERNAME }}" --password-stdin
 
       - name: Push Image to Quay.io
-        run: docker push quay.io/${{ secrets.QUAY_USERNAME }}/meuapp:${{ github.sha }}
+        run: docker push quay.io/${{ secrets.QUAY_USERNAME }}/sales_analytics_api:${{ github.sha }}
