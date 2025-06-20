@@ -30,9 +30,9 @@ spec:
               path: /actuator/health
               port: 8080
               scheme: HTTP
-            initialDelaySeconds: 10   # tempo para o app subir antes da primeira checagem
-            periodSeconds: 10         # frequência de verificação
-            timeoutSeconds: 2         # tempo limite para resposta
+            initialDelaySeconds: 30    # tempo para o app subir antes da primeira checagem
+            periodSeconds: 15         # frequência de verificação
+            timeoutSeconds: 5        # tempo limite para resposta
             failureThreshold: 3       # falhas seguidas antes de reiniciar o container
 
 ---
